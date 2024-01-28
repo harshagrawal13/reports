@@ -78,3 +78,4 @@
 *.rel
 *.texpadtmp
 *.tpsync
+.DS_Store
