@@ -27,9 +27,13 @@ This repository contains all the lab reports, literature reviews, and coursework
 
 ### 2. Module: Medical and Biochemical Sciences II
 - **Lab Report 1**: Lab Report on p53's Response to Aging ([PDF](./year_2/lab_report_p53_response_to_aging/main.pdf))
+- **Notes**: [INCOMPLETE] Notes on Epigenetics ([PDF](./year_2/notes_epigenetics/main.pdf))
 
 ### 3. Module: Design and Professional Practice II (DAPP II)
 - **Final Year Project Report**: Microfluidic Chip for Assembly of Multiscale Vascular Networks ([PDF](./year_2/dapp_report_microfluidic_chip/overleaf_compiled_report.pdf))
+
+### 4. Module: Signals and Control
+- **Notes**: [INCOMPLETE] Notes on Signals and Control ([PDF](./year_2/notes_signals/main.pdf))
 
 ## Year 3
 ### 1. Module: Modelling in Biology
@@ -38,3 +42,6 @@ This repository contains all the lab reports, literature reviews, and coursework
 
 ### 2. Module: Group Project
 - **Literature Review**: Literature Review on Heart Rate Variability ([PDF](./year_3/lit_review_group_project/main.pdf))
+
+### 3. Module: Biomaterials
+- **Notes**: [INCOMPLETE] Notes on Biomaterials ([PDF](./year_3/notes_biomaterials/main.pdf))

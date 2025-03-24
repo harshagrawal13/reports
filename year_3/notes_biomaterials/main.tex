@@ -1,0 +1,412 @@
+\documentclass[12pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{graphicx}
+\usepackage[margin=1in]{geometry}
+\usepackage{hyperref}
+\usepackage{caption}
+\captionsetup{justification=centering}
+\usepackage{booktabs}
+\usepackage{array}
+
+\title{\Huge\centering Biomaterials Notes}
+\author{Taught by Adam Celiz \\ Notes by Harsh Agrawal}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\subsection{Need for Biomaterials}
+Biomaterials have been used in different capacities for more than a thousand
+years. Most early biomaterials were metals such as gold braces in ancient Egypt
+(1500 B.C.). Metals were usually used as they didn't degrade.
+
+On the basis of biological integration, biomaterials can be classified into:
+\begin{itemize}
+    \item Implants
+    \item Transplants
+    \item Prostheses
+\end{itemize}
+
+An \textbf{implant} is an object that is inserted or embedded surgically into
+the body. This includes leg implants, breast implants, dental implants, etc.
+Some common issues with implants include:
+\begin{itemize}
+    \item \textbf{Problem 1}: No manmade material available today can completely match the biomechanical characteristics of living tissues and thus true integration is often unattainable.
+    \item \textbf{Problem 2}: No manmade material can self repair.
+    \item \textbf{Problem 3}: No manmade material is capable of adjusting its
+          structure and properties to changes in the environment or to mechanical
+          that it encounters.
+\end{itemize}
+
+An \textbf{transplant} is typically a tissue or organ that is moved from one
+body or body part to another. This includes heart transplants, skin grafts,
+etc. On the basis of the origin of tissue / organ, transplants can be
+categorized into:
+\begin{itemize}
+    \item \textbf{Autografts}: Transplants from another site of the patient's body. It is often the most desirable option as it reduces the chance of infection and immune-rejection. However, it is often detrimental to the donor site. Some examples include skin grafts, bone grafts, etc.
+    \item \textbf{Allografts}: Transplant from another human. This is often less desirable than autografts due to the chances of immune rejection. There is also a risk of disease transmission. An example is kidney transplants.
+    \item \textbf{Xenografts}: Transplant from another species. This is often the least desirable option as there is a high risk of immune rejection and disease transmission. We still do not fully understand the long-term effects of xenografts. An example is heart valves taken from pigs during valve replacement surgeries.
+\end{itemize}
+
+A \textbf{prosthesis} is an artificial device used inside the body to replace
+or augment a diseased / damaged part. An example is the full hip replacement
+prosthesis.
+\subsection{Pre-requisite Cell Biology}
+\subsubsection{Cell Membrane}
+The cell membrane is composed of a phospholipid bilayer with embedded proteins
+bound to sugar and cholesterols. Key properties of the cell membrane include:
+\sloppy
+\begin{itemize}
+    \item \textbf{Isolation}: The cell membrane insulates and isolates the cell from the external environment.
+    \item \textbf{Selective permeability}: The cell membrane allows certain substances to pass through while blocking others. It allows for the free diffusion of hydrophobic non-polar and small polar molecules. It also facilitates protein-mediated transport of large polar molecules and ions.
+    \item \textbf{Controls Trafficking}: The cell membrane controls the movement of substances into and out of the cell.
+    \item \textbf{Key Role in Signalling}: The cell membrane plays a key role in signalling and signal recognition.
+    \item \textbf{Phagocytotic Function}: The cell membrane allows for endocytosis of fluids and large particles.
+\end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/chapter_1/endocytosis.png}
+    \caption{Figure shows the different types of endocytosis}\label{fig:endocytosis}
+\end{figure}
+
+\textbf{Endocytosis} is a cellular process in which substances are brought into the cell. The material to be internalized is surrounded by an area of cell membrane, which then buds off inside the cell to form a vesicle containing the ingested materials.\footnote{Source: \url{https://en.wikipedia.org/wiki/Endocytosis}} There are four primary pathways of endocytosis:
+\begin{itemize}
+    \item \textbf{Clathryn-Mediated Endocytosis}: mediated by the production of small (approx. 100 nm in diameter) vesicles that have a morphologically characteristic coat made up of the cytosolic protein \textbf{clathrin}. It is also called receptor-mediated endocytosis.
+    \item \textbf{Caveolae-Mediated Endocytosis}: mediated by non-clathryn coated membrane buds made up of cholesterol-binding proteins called caveolins. The name comes from `caveolae' which are small (approx. 50 nm in diameter) flask-shape pits in the membrane that resemble the shape of a cave.
+    \item \textbf{Pinocytosis}: Non-specific uptake of extra-cellular fluid into the cell through small vescicles called pinosomes.
+    \item \textbf{Phagocytosis}: cells, primarily some immune cells such as macrophages, engulf solid particles like bacteria, debris, and dead cells using large vescicles called phagosomes, which fuse with lysosomes for digestion.
+\end{itemize}
+
+\textbf{Exocytosis} is the process of emptying membrane-bound vesicles into the extra-cellular region. This is used to release hormones, neurotransmitters, and other signaling molecules. It is also used to insert cell-surface proteins into the cell membrane.
+
+\textbf{Lysosomes} are membrane-bound vesicles filled with hydrolytic enzymes (very low pH) capable of digesting a variety of macromolecules. These are also called `suicidal bags'.
+
+\subsubsection{Cytoskeleton and Motor Proteins}
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/chapter_1/cytoskeleton.png}
+    \caption{Structure and components of the cell cytoskeleton. Source: \url{https://shorturl.at/ZCXQS}}\label{fig:cytoskeleton}
+\end{figure}
+
+The \textbf{cytoskeleton} is a dynamic network of protein filaments that extend
+throughout the cytoplasm of the cell. It is composed of three segments:
+\begin{itemize}
+    \item \textbf{Microtubules}: Made up of the protein \textbf{tubulin}.
+    \item \textbf{Microfilaments}: Made up of the protein \textbf{actin}.
+    \item \textbf{Intermediate Filaments}: Made up of \textbf{keratins} coiled together.
+\end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/chapter_1/motor_proteins.png}
+    \caption{Motor proteins and their movement along cytoskeletal filaments. Modified from \url{https://book.bionumbers.org/how-fast-do-molecular-motors-move-on-cytoskeletal-filaments/}}\label{fig:motor_proteins}
+\end{figure}
+
+\textbf{Motor Proteins} are specialized proteins that use energy to move along
+cytoskeletal filaments. There are three motor proteins:
+\begin{itemize}
+    \item \textbf{Myosin V}: Interacts with actin filaments to produce movement.
+    \item \textbf{Kinesin}: Transports cargo such as organelles, vesicles, and proteins along microtubules, usually towards the plus (+) end.
+    \item \textbf{Dynein}: Moves cargo towards the minus (-) end of microtubules..
+\end{itemize}
+
+\subsubsection{Cytoplasm, Organelles, and other Cellular Components}
+\textbf{Cytoplasm} is comprised of the cytosol and the cytoskeleton. The cytosolic pH is around 7 and consists of water, dissolved ions, small molecules, and large water-soluble molecules (including proteins\footnote{Not all proteins are water-soluble.}).
+\textbf{Organelles} are membrane-bound, lipid bi-layer intracellular compartments. They are suspended in the cytoplasm and are only present in eukaryotic cells. These include smooth / rough Endoplasmic Reticulum, Ribosomes, Mitochondria, Peroxisomes, Lysosomes, Cell Nucleus, and Golgi Apparatus, etc.
+
+\vspace{1em}
+\noindent
+Role of ER and Golgi Apparatus in protein synthesis:
+\begin{itemize}
+    \item Rough ER is in the closest proximity to the nucleus. RER consists of ribosomes
+          and thus the mRNA it translates are directly secreted into the lumen of the
+          RER.
+    \item Certain proteins such as membrane proteins, proteins to be trafficked out of
+          the cell, and enzymes for lysosomes are secreted out this way whereas other
+          proteins are translated via free ribosomes.
+    \item Once translated, RER proteins are folded with the help of chaperones and then
+          transported to the Golgi apparatus for `Post Translational Modifications (PTM)'
+          such as glycosylation, phosphorylation, etc.
+\end{itemize}
+
+\noindent
+Factors affecting gene expression:
+\begin{itemize}
+    \item \textbf{Transcription Factors}: Proteins that bind to DNA and regulate the transcription of genes. These are responsible for turning genes on or off and modulating chromatin opening.
+    \item \textbf{Spliceosomes}: Spliceosomes are large ribonucleoprotein complexes that are responsible for rearranging exons after splicing. They are found in the nucleus of eukaryotic cells.
+    \item \textbf{Epigenetics}: DNA methylation, acetylation, and histone modification are all epigenetic mechanisms that can affect gene expression without altering the underlying DNA sequence.
+\end{itemize}
+
+\subsubsection{Extracellular Matrix (ECM)}
+\textbf{Extracellular Matrix (ECM)} is a complex network of proteins and carbohydrates secreted by cells into their extracellular environment. This is the non-cellular component in all tissues and organs. It is composed of collagen, proteoglycans, elastin, glycoproteins, and growth factors. ECM provides scaffolding, biochemical and mechanical cues required for tissue homeostasis. Genetic abnormalities in ECM components can lead to severe diseases. It is continuosly remodeled by enzymes such as \textbf{Matrix Metalloproteinases (MMPs)}.
+\begin{itemize}
+    \item \textbf{Marfan Syndrome}: Caused due to mutation in Fibrillin-1 protein (important for connective tissue integrity). Affects skeleton, heart, eyes, and blood vessels.
+    \item \textbf{Ehlers-Danlos Syndrome}: Caused due to mutation in Collagen. Leads to hypermobile joints, stretchy skin, and fragile tissues.
+\end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/chapter_1/diseases_ecm.png}
+    \caption{Diseases caused by ECM abnormalities}\label{fig:diseases_ecm}
+\end{figure}
+
+\noindent
+Role of Extracellular Matrix (ECM):
+\begin{itemize}
+    \item \textbf{Anchorage Dependence}: ECM binds to cell surface receptors providing structural stability and positioning.
+    \item \textbf{Regulation of Cell Signalling Pathway}: Signalling pathways are initiated when ECM molecules bind to receptors that are essential for gene expression regulation, protein synthesis, etc. Examples incluyde the MAPK pathway.
+    \item \textbf{Mechanotransduction}: ECM conveys mechanical signals to cells by alterung shape and tension within the cytoskeleton.
+    \item \textbf{Presets Growth Factors}: ECM provides localized and sustained release of growth factors important for tissue repair and growth.
+\end{itemize}
+
+\noindent
+Various biomaterials that mimic ECM include:
+\begin{itemize}
+    \item \textbf{Natural ECMs}: Would contain Decellularized ECMs such as Collagen type I fibres,
+          Hyaluronic Acid, Fibronectin, etc.
+    \item \textbf{Synthetic ECMs}: Peptides, Polymers, and Hydrogels.
+\end{itemize}
+
+\subsection{Cell Cultures}
+\textbf{Cell lines} are cultures of cells that can be propagated repeatedly and sometimes indefinitely under specified laboratory settings.
+
+Depending on the application, the source of the cell culture can vary. To study
+a particular tissue type, cells are derived from that tissue / organ site and
+cultured till confluency.
+\begin{itemize}
+    \item \textbf{Confluency}: The percentage of surface area of a culture dish that is covered by cells.
+    \item \textbf{Passaging}: The process of removing cells from a culture dish and adding fresh medium to allow the cells to grow and multiply.
+    \item \textbf{Passage Number}: The number of times a cell line has been passaged.
+    \item \textbf{Primary and Secondary Cell Lines}: Primary cell lines are cells that are directly taken from an organism's tissues or organs, while secondary cell lines are primary cell lines that have been sub-cultured or passaged.
+\end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/chapter_1/cell_cultures.png}
+    \caption{Cell Line Types}\label{fig:cell_line_types}
+\end{figure}
+
+Primary cell lines derived from non-stem, non-cancerous sources typically
+exhibit a \textbf{finite lifespan} in culture (e.g., skin fibroblasts,
+epithelial cells). They undergo a limited number of cell divisions before
+entering \textbf{senescence}, a state where they no longer proliferate. This
+phenomenon is known as the \textbf{Hayflick Limit}, which is generally around
+40--60 passages for human somatic cells.
+
+Once the cells in the primary culture reach confluency, they are passaged and
+resuspended in fresh artificial cell culture media. This culture leads to the
+formation of a \textbf{secondary cell line}. Usually, these cells might start
+loosing phenotype from the primary cell line as they have been present in an
+artificial environment for quite some time.
+
+To obtain cell cultures that are immortal, cells are either obtained from a
+cancerous source (that have indefinite division capability) or certain
+mutations are induced in the non-cancerous cell source to induce indefinite
+division capability. This type of cell line is called an \textbf{immortalized
+    cell line}.
+
+\section{Metals and Ceramics}
+\subsection{Microstructure and Interatomic Bonds}
+Before we delve into the properties of metals and ceramics, let's review the
+basic concepts of interatomic forces and the differences between crystalline
+and amorphous structures. We begin by looking at the different types of bonds
+that hold solids together:
+\begin{itemize}
+    \item \textbf{Ionic Bonds}: Have an electron donor and acceptor. Ionic solids are poor electrical conductors as the $e^{-}$ aren't delocalized and can't travel freely.
+    \item \textbf{Covalent Bonds}: Formed between multivalent elements that have equal tendency to share and accept electrons. Also poor electrical conductors. Shared by ceramics and glasses.
+    \item \textbf{Metallic Bonds}: Shared by metals. The delocalized $e^{-}$ can move freely within the metal structure, making metals good electrical conductors. The non-localized $e^{-}$ also allows for plastic deformation\footnote{Permanent changes in the shape as opposed to elastic deformation which is reversible changes in shape} making metals ductile.
+\end{itemize}
+
+\noindent
+Difference between crystalline and amorphous structures:
+\begin{itemize}
+    \item \textbf{Crystalline} structures have a regular and repeating pattern of atoms (called the unit cell). Present in metals and ceramics.
+    \item \textbf{Amorphous} structures have an irregular and non-repeating pattern of atoms. These contain a lot of defects. Eg: Glass.
+\end{itemize}
+
+To delve a level deeper, we can look into the microstructures features of
+underpinning these solids. \textbf{Microstructure} refers to the arrangement,
+size, shape, and distribution of the phases and constituents within a material,
+visible at a microscopic scale. These features are typically observed using
+techniques like optical microscopy, scanning electron microscopy (SEM), or
+transmission electron microscopy (TEM). These include:
+% TODO: Add figures / relevant explainations for these.
+\begin{itemize}
+    \item \textbf{Grain Size}: The size of the individual crystals in a material.
+    \item \textbf{Grain Shape}: The shape of the individual crystals in a material.
+    \item \textbf{Grain Orientation}: The orientation of the individual crystals in a material.
+    \item \textbf{Grain Boundaries}: The interfaces between adjacent crystals.
+    \item \textbf{Phase Composition}: The different chemical compounds present in the material.
+    \item \textbf{Porosity}: The presence of voids or pores within the material.
+    \item \textbf{Microcracks}: The presence of cracks within the material.
+\end{itemize}
+
+\subsection{Metals}
+\subsubsection{Properties}
+Metals are typically crystalline in nature. They are good conductors of heat
+and electricity. Their metallic structure exhibits plastic deformation under
+load. The reason metals can bend is because they contain imperfections in the
+crystal structure called \textbf{dislocations} which makes it easier for them
+to slide over a \textbf{slip plane} under shear stress. A slip plane refers to
+a specific plane along which layers of atoms can slide on.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/chapter_2/slip_plane.png}
+    \caption{Illustration of a slip plane in a metal crystal structure. When shear stress is applied, atomic layers can slide along these planes, resulting in plastic deformation. Source: \url{https://tinyurl.com/y2tbteyd}}\label{fig:slip_plane}
+\end{figure}
+
+Lets now look into the mechanical properties of metals as described by the
+stress-strain curve:
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\textwidth]{figures/chapter_2/mechanical_properties.png}
+    \caption{Stress-strain curve showing key mechanical properties of metals. The elastic region shows reversible deformation, while the plastic region shows permanent deformation.}\label{fig:mechanical_properties}
+\end{figure}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/chapter_2/fatigue_curve.png}
+    \caption{S-N (Stress vs Number of cycles) curve of the titanium alloy Ti-6Al-4V. Source: \url{https://tinyurl.com/yvy9hhkb}}\label{fig:fatigue_curve}
+\end{figure}
+
+\begin{itemize}
+    \item \textbf{Stress}: This is defined as the force per unit area ($\sigma = F/A$) applied to a material. Stress is the y-axis of the stress-strain curve.
+    \item \textbf{Strain}: This is defined as the deformation per unit length ($\epsilon = \Delta L / L$). Strain is the x-axis of the stress-strain curve.
+    \item \textbf{Toughness}: Toughness is the measure of a material's ability to absorb energy before failure. It is the area under the stress-strain curve. Metals typically have high toughness.
+    \item \textbf{Ductility}: Ability to be stretched or bent without breaking. This is linked with a high plastic region. Metals with high ductility have a high plastic region and lower elastic region.
+    \item \textbf{Elasticity}: Ability to return to original shape after stress is removed. This is represented by the linear (elastic) region of the stress-strain curve.
+    \item \textbf{Tensile Strength}: The maximum stress a material can withstand before failure. Metals usually have high tensile strength.
+    \item \textbf{Yield Strength}: The stress at which a material begins to deform plastically.
+    \item \textbf{Young's Modulus}: The slope of the linear (elastic) region of the stress-strain curve. This is a measure of stiffness and is given by $E = \sigma/\epsilon$.
+    \item \textbf{Fatigue}: Refers to the progressive weakening or failure of a material under repeated or fluctuating stress cycles, even if the maximum stress is well below the material's ultimate tensile strength\footnote{Not present in the stress-strain curve}. This is quite relevant in designing heart valves and prosthetic joints. Fatigue is accumulated as repetitive loading can produce microcracks that propagate at each loading cycle. The fatigue curve is obtained by plotting the maximum stress against the number of cycles to failure as mentioned in fig.~\ref{fig:fatigue_curve}.
+\end{itemize}
+
+We can also look at the Young's Modulus values for different materials
+(including biomaterials) to estimate their relative stiffness.
+\begin{table}[h]
+    \centering
+    \begin{tabular}{ll}
+        \toprule
+        Material   & Young's Modulus (GPa) \\
+        \midrule
+        Bone       & 15--30                \\
+        Aluminum   & 69                    \\
+        CoCr Alloy & 225                   \\
+        \bottomrule
+    \end{tabular}
+    \caption{Young's Modulus values for different materials. The table highlights that bone has significantly lower stiffness than various metals.}\label{tab:youngs_modulus}
+\end{table}
+
+We can also evaluate the mechanical properties of metals in terms of its
+microstructure. The \textbf{Hall-Petch Relationship} is used to predict the
+yield strength of a material based on its grain size. It is given by:
+\begin{equation}
+    \sigma_y = \sigma_0 + k \sqrt{d^{-1}}
+\end{equation}
+where $\sigma_y$ is the yield strength, $\sigma_0$ is the intrinsic yield strength, $k$ is the Hall-Petch slope, and $d$ is the average grain diameter. The relationship highlights that as the grain size decreases, the yield strength increases. This can be explained as follows:
+\begin{itemize}
+    \item Grain boundaries act as barriers to dislocation movement. Smaller grains lead
+          to more boundaries per unit volume, which increases the resistance to plastic
+          deformation.
+    \item Dislocations pile up at grain boundaries. Smaller grains reduce the number of
+          dislocations that can accumulate, increasing the stress required for
+          deformation.
+\end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/chapter_2/alloys_types.jpeg}
+    \caption{Types of alloys: (a) Substitutional solid solution and (b) Interstitial solid solution. Source: \url{https://tinyurl.com/96ep6a4y}}\label{fig:alloy_types}
+\end{figure}
+
+\subsubsection{Alloys}
+To optimize for better mechanical properties and to overcome the limitation of
+corrosion (and oxidation), we make use of \textbf{alloys}. Allows can be made
+by two methods:
+\begin{itemize}
+    \item \textbf{Substitutional Solid Solution Alloys}: Formed by mixing two or more metals in the same crystal structure of similar size. This doesn't really disrupt the order of the crystal structure. Eg. Aluminum and Copper alloys.
+    \item \textbf{Interstitial Solid Solution Alloys}: Formed by mixing two or more metals in the same crystal structure of different size. This disrupts the order of the crystal structure. Eg. Steel (Fe \& C).
+\end{itemize}
+
+In alloys, atoms of different sizes are introduced into the host metal. These
+solute atoms distort the crystal lattice, creating local stress fields that
+interact with dislocations. The interaction increases the stress required for
+dislocations to move, effectively “stopping” them and making the alloy
+stronger. These are also called \textbf{Stopping Dislocations}.
+
+In medicine, metals are ususally used various different areas such as
+orthopaedics, oral and maxillofacial surgery, cardiovascular surgery,
+dentistry, etc. It is also used in creating Hip Prosthesis for Total Hip
+Replacement surgeries. Metals and alloys used in total hip replacement
+surgeries include:
+\begin{table}[htbp]
+    \centering
+    \begin{tabular}{>{\raggedright\arraybackslash}p{2.5cm}>{\raggedright\arraybackslash}p{4cm}>{\raggedright\arraybackslash}p{4cm}}
+        \toprule
+        Material    & Applications                          & Properties                               \\
+        \midrule
+        CoCr Alloys & stem, head (ball) cup, porous coating & heavy, hard, stiff, high wear resistance \\
+        Ti Alloys   & stem, porous coating                  & low stiffness                            \\
+        Pure Ti     & porous coating                        & excellent osteointegration               \\
+        \bottomrule
+    \end{tabular}
+    \caption{Common metals and alloys used in medical applications, their typical uses, and key properties.}\label{tab:medical_metals}
+\end{table}
+
+\subsection{Ceramics}
+\subsubsection{Properties and Formation Process}
+Ceramics are solid inorganic compounds with various combinations of ionic or
+covalent bonds. They have a more complex crystal structure than metals.
+Properties of ceramics include:
+\begin{itemize}
+    \item \textbf{Hardness}: Ceramics are typically harder than metals.
+    \item \textbf{Brittleness}: Ceramics are more brittle than metals.
+    \item \textbf{Combustibility}: Ceramics are usually incombustible.
+    \item \textbf{Melting Point}: Ceramics have high melting points.\footnote{This makes them an excellent choice for heat shielding in space shuttles.}
+    \item \textbf{Corrosion Resistance}: Ceramics are resistant to corrosion.
+    \item \textbf{Electrical Conductivity}: Ceramics are poor electrical conductors.
+          % \item \textbf{Heat Resistance}: Ceramics have excellent heat resistance and don't deform in high temperature environments.
+    \item \textbf{Weight}: Ceramics are typically lighter than metals.
+    \item \textbf{Chemical Stability}: Ceramics are typically more chemically stable than metals. They do not oxidize.
+\end{itemize}
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/chapter_2/ceramics_microstructure.jpg}
+    \caption{Microstructure of a typical ceramic. Source: \url{https://shorturl.at/XfimY}.}\label{fig:ceramics_microstructure}
+\end{figure}
+
+The ceramic microstructure shows an aggregate of randomly oriented crytallites
+(typically less than $\sim$ 100 $\mu m$ in size) intimately bonded together to
+form a solid. As visible from fig.~\ref{fig:ceramics_microstructure}, this
+characterises two distinct features in the microstructure: distinct grain
+boundaries and the presence of pores. The grain boundaries and pores are a
+source of crack propagation.
+
+Since ceramics are quite resistant to heat and are chemically inert, they are
+processed via \textbf{sintering}. This is a process where the ceramic powder is
+heated to a high temperature (in a furnace) to fuse the particles together. Two
+sintering processes are most commonly used: fluid-flow sintering (most common)
+and solid-state sintering.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=0.6\textwidth]{figures/chapter_2/sintering.jpg}
+    \caption{Illustration of the sintering process in ceramics.~\textit{Could not find a source for this image.}}\label{fig:sintering}
+\end{figure}
+
+\subsubsection{Types of Ceramics}
+On the basis of chemical composition, ceramics can be classified into:
+\begin{itemize}
+    \item \textbf{Oxide Ceramics}: Typically oxides, nitrides, carbides, etc.
+    \item \textbf{Organic Ceramics}: Typically polymers that have been modified to improve their mechanical properties.
+\end{itemize}
+\end{document}

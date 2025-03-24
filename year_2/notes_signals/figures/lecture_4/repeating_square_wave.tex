@@ -1,0 +1,34 @@
+% Tikz File 'mytikz.tex'
+\documentclass{standalone}
+\usepackage{tikz}
+%\usetikzlibrary{...}
+\begin{document}
+\begin{tikzpicture}
+    % Fill the area under the curve
+    % \fill[gray!20] (0,0) -- (0,2) -- (0.5,2) -- (0.5,0) -- cycle;
+
+    % Add grid
+    \draw[gray!50, dashed, step=1] (-3.9,-0.9) grid (7.9,4.9);
+
+    % Add axes
+    \draw[<->] (-3,0) -- (7,0) node [right] {$t$};
+    \draw[->] (2,0) -- (2,4) node [right] {$x(t)$};
+
+    \foreach \x in {-0.5, 1.5,..., 3.5} {
+            \draw [thick] (\x,0) -- (\x,1) -- (\x+1,1) -- (\x+1,0);
+        }
+
+    \node at (2.8, 1) {1};
+    \node at (1.5, -0.3) {\small $-T_{1}$};
+    \node at (2.5, -0.3) {\small $-T_{2}$};
+
+    \draw[<->, gray] (2,2) -- (4, 2) node [below, xshift=-1cm] {$T$};
+
+    \node at (6, 0.5) {. . .};
+    \node at (-2, 0.5) {. . .};
+
+
+\end{tikzpicture}
+\end{document}
+
+
