@@ -24,6 +24,7 @@ This repository contains all the lab reports, literature reviews, and coursework
 - **Lab Report 1**: Lab Report on Gold Nanorod and Quantum Dot Synthesis ([PDF](./year_2/lab_report_au_nrs_and_qds/achemso-demo.pdf))
 - **Lab Report 2**: Lab Report on Building a Spectrophotometer ([PDF](./year_2/lab_report_spectrometer/write_up.pdf))
 - **Lab Report 3**: Lab Report on Extraction of Ortho-Vanillin through Steam Distillation ([PDF](./year_2/lab_report_on_seperation_methods/main.pdf))
+- **Lab Report 4**: Lab Report on the Analytical Methods to Identify Mystery Compound ([PDF](./year_2/lab_report_analysis_techniques/report.pdf))
 
 ### 2. Module: Medical and Biochemical Sciences II
 - **Lab Report 1**: Lab Report on p53's Response to Aging ([PDF](./year_2/lab_report_p53_response_to_aging/main.pdf))
