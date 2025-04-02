@@ -1,6 +1,6 @@
 # Reports
 This repository contains all the lab reports, literature reviews, and coursework I've done, primarily as part of my course - Molecular Bioengineering - at Imperial College London.
-
+[ANY IMPERIAL STUDENTS PLEASE DON'T PLAGIARIZE]
 ## Year 1
 ### 1. Module: Molecules & Energetics
 - **Lab Report 1**: Lab Report on Contact Angles of Liquids on Solid ([PDF](./year_1/lab_report_contact_angles/sn-article.pdf))
