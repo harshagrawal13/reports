@@ -46,3 +46,6 @@ This repository contains all the lab reports, literature reviews, and coursework
 
 ### 3. Module: Biomaterials
 - **Notes**: [INCOMPLETE] Notes on Biomaterials ([PDF](./year_3/notes_biomaterials/main.pdf))
+
+### 4. Module: Synthetic Biology
+- **Lab Report**: Lab Report on Synthetic Biology ([PDF](./year_3/lab_report_syn_bio/main.pdf))
